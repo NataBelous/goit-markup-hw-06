@@ -842,3 +842,41 @@ ul {
 	color: var(--primary-white-color);
 
 }
+
+/*.icon-name {
+	position: absolute;
+	display: inline-block;
+  background-image: url(../images/person-black-18dp\1-2.svg);
+}
+
+
+.custom-checkbox {
+	position: absolute;
+  z-index: -1;
+  opacity: 0;
+}*/
+
+
+/*.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+ 
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+	background: url(../images/Vector-3-2.svg);
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background: url(../images/Vector-3-2.svg);
+}*/
