@@ -72,7 +72,6 @@
 						<div class="modal-form">
 						<label for="name" class="modal-form-label">Имя</label>
 						<input type="text" class="modal-form-input" name="name"/>
-						<span class="icon-name"></span>
 						</div>
 						<div class="modal-form">
 							<label for="tel" class="modal-form-label">Телефон</label>
@@ -86,13 +85,16 @@
 						<label for="content" class="modal-form-label">Комментарий</label>
 						<textarea type="text" class="modal-form-textarea" name="content" placeholder="Введите текст" ></textarea>
 						</div>
+
 						<div>
-						<input type="checkbox" class="custom-checkbox" name="agree"/>
-						<label for="agree">
+						<label class="check">
+							<input type="checkbox" class="custom-checkbox" name="agree"/>
+							<span class="check-box"></span>
 							Соглашаюсь с рассылкой и принимаю
-							<a href="">Условия договора</a>
+							<a class="modal-link-policy" href="">Условия договора</a>
 						</label>
 						</div>	
+
 						<button class="modal-form-button" type="submit">Отправить</button>
 					</form>
 				</div>
