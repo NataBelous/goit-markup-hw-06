@@ -141,9 +141,7 @@ body {
 .button-link:hover {
 	background-color: var(--accent-color);
 	color: var(--primary-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-	            0px 1px 2px rgba(0, 0, 0, 0.08), 
-							0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-link {
@@ -158,9 +156,8 @@ body {
 	border: none;
 	padding: 6px 22px;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-	            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-	          	box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero {
@@ -240,8 +237,7 @@ body {
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
-										url(../images/Img-hero.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
 	max-width: 1600px;
 	height: 600px;
 	margin: 0 auto;
@@ -329,9 +325,7 @@ body {
 	width: 270px;
 	margin-right: 30px;
 	background: #ffffff;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-	            0px 1px 1px rgba(0, 0, 0, 0.14),
-						  0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -434,9 +428,7 @@ img {
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-	            0px 4px 4px rgba(0, 0, 0, 0.06), 
-							1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item {
@@ -514,8 +506,7 @@ ul {
 	color: var(--primary-color-social);
 	border-radius: 50%;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-	            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover,
@@ -569,8 +560,7 @@ ul {
 	align-items: center;
 	border-radius: 4px;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-	            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link > svg {
@@ -667,11 +657,9 @@ ul {
 	min-width: 528px;
 
 	background: var(--primary-white-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-	            0px 1px 1px rgba(0, 0, 0, 0.14), 
-							0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	
+
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -679,11 +667,19 @@ ul {
 	position: fixed;
 	top: 8px;
 	right: 8px;
-	width: 30px;
-	height: 30px;
+	padding: 0;
 	border: none;
 	background: var(--primary-white-color);
 	cursor: pointer;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover {
+	color: var(--accent-color);
+}
+
+.close-icon {
+	--color2: currentColor;
 }
 
 /* t e x t - p o r t f o l i o  */
@@ -717,9 +713,8 @@ ul {
 /* f o r m   footer*/
 
 .footer-subscribe {
-
 	display: block;
-  
+
 	color: var(--primary-white-color);
 	font-weight: 700;
 	font-size: 14px;
@@ -743,8 +738,8 @@ ul {
 
 	box-sizing: border-box;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
 	background-color: #2f303a;
 
 	font-size: 16px;
@@ -755,9 +750,9 @@ ul {
 }
 
 .form-button {
-  width: 200px;
+	width: 200px;
 	height: 50px;
-  background: #2196F3;
+	background: #2196f3;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	margin-right: 0;
@@ -771,7 +766,7 @@ ul {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color:var(--primary-white-color);
+	color: var(--primary-white-color);
 }
 
 .icon-send {
@@ -782,13 +777,14 @@ ul {
 /* F O R M  M O D A L */
 
 .modal-form {
-  display: block;
+	position: relative;
+	display: block;
 	margin: 10px 40px;
 }
 
 .modal-p {
 	width: auto;
-  margin: 40px 40px 12px 40px;
+	margin: 40px 40px 12px 40px;
 
 	font-weight: 700;
 	font-size: 20px;
@@ -797,13 +793,33 @@ ul {
 }
 
 .modal-form-input {
-  /*position: relative;*/
-
 	width: 448px;
 	height: 40px;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+	border-radius: 4px;
+	padding-left: 42px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus,
+.modal-form-textarea:focus {
+	border: 1px solid var(--accent-color);
+	outline: none;
+}
+
+.icon {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 12px;
+	width: 18px;
+	height: 18px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .icon {
+	fill: var(--accent-color);
 }
 
 .modal-form-textarea {
@@ -813,15 +829,16 @@ ul {
 	margin-bottom: 20px;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+	border-radius: 4px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-label {
-  margin-bottom: 4px;
+	margin-bottom: 4px;
 	font-size: 12px;
 	line-height: 1.166;
 	letter-spacing: 0.01em;
-  color: var(--title-text-color);
+	color: var(--title-text-color);
 	display: block;
 	text-align: left;
 }
@@ -832,9 +849,9 @@ ul {
 	margin-top: 30px;
 	margin-bottom: 40px;
 
-	background: #2196F3;
+	background: #2196f3;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;	
+	border-radius: 4px;
 	border: none;
 
 	font-weight: 700;
@@ -845,6 +862,7 @@ ul {
 	text-align: center;
 	letter-spacing: 0.06em;
 	color: var(--primary-white-color);
+	cursor: pointer;
 }
 
 /* c h e c k-box */
@@ -872,12 +890,13 @@ ul {
 	background-image: url(../images/checkbox-checked.svg);
 }
 
-
 .check {
 	position: relative;
 	padding-left: 21px;
 }
 
-.modal-link-policy, .modal-link-policy:hover, .modal-link-policy:focus {
+.modal-link-policy,
+.modal-link-policy:hover,
+.modal-link-policy:focus {
 	color: var(--accent-color);
 }
