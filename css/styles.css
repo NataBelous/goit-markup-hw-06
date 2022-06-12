@@ -661,25 +661,26 @@ ul {
 	border-radius: 4px;
 
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	padding: 40px;
 }
 
 .button-modal {
-	position: fixed;
+	position: absolute;
 	top: 8px;
 	right: 8px;
+	width: 30px;
+	height: 30px;
+
 	padding: 0;
 	border: none;
-	background: var(--primary-white-color);
+	background: url(../images/icon-close.svg);
 	cursor: pointer;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal:hover {
-	color: var(--accent-color);
-}
-
-.close-icon {
-	--color2: currentColor;
+	background: url(../images/icon-close2.svg);
 }
 
 /* t e x t - p o r t f o l i o  */
@@ -721,7 +722,7 @@ ul {
 	line-height: 1.142;
 	text-transform: uppercase;
 
-	margin-left: 93px;
+	margin-left: auto;
 }
 
 .footer-form {
@@ -779,12 +780,12 @@ ul {
 .modal-form {
 	position: relative;
 	display: block;
-	margin: 10px 40px;
+	margin: 10px;
 }
 
 .modal-p {
 	width: auto;
-	margin: 40px 40px 12px 40px;
+	margin: 12px;
 
 	font-weight: 700;
 	font-size: 20px;
@@ -805,6 +806,7 @@ ul {
 .modal-form-input:focus,
 .modal-form-textarea:focus {
 	border: 1px solid var(--accent-color);
+	resize: none;
 	outline: none;
 }
 
@@ -844,10 +846,11 @@ ul {
 }
 
 .modal-form-button {
+  /*position: absolute;*/
+
 	width: 200px;
 	height: 50px;
 	margin-top: 30px;
-	margin-bottom: 40px;
 
 	background: #2196f3;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
